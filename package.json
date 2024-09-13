@@ -1,5 +1,5 @@
 {
-  "homepage": "https://LachlanSkinner.github.io/AS2.git"
+  "homepage": "https://LachlanSkinner.github.io/AS2.git",
   "name": "future-sports",
   "version": "0.1.0",
   "private": true,
@@ -15,10 +15,10 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +43,5 @@
     "@testing-library/react": "^16.0.1",
     "gh-pages": "^6.1.1",
     "jest": "^27.5.1"
-  },
- 
+  }
 }
