@@ -1,0 +1,70 @@
+/* Athlete Profiles Section */
+.athlete-profiles {
+    padding: 40px 20px;
+    background: none; /* Remove the container background */
+    text-align: center; /* Center align the title */
+}
+
+.athlete-profiles h2 {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* Athlete Profile Container */
+.athlete-profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Space between the cards */
+}
+
+/* Profile Card Styling */
+.profile-card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+    text-align: center;
+}
+
+/* Add a hover effect to lift the card slightly */
+.profile-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Profile Image Styling */
+.profile-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Athlete Name Styling */
+.profile-card h3 {
+    color: green;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Specialisation and Achievements Styling */
+.profile-card p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.profile-card h4 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.profile-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}

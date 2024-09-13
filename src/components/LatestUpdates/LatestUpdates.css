@@ -1,0 +1,64 @@
+/* Content container */
+.content {
+    padding: 2rem;
+    max-width: 1500px; /* Limit the width for the entire page content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Section margin for spacing between sections */
+.section {
+    margin-bottom: 0rem;
+}
+
+/* Latest Updates Section */
+.latest-updates {
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Title Styling */
+.latest-updates h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Update Item Styling */
+.update-item {
+    margin-bottom: 20px;
+}
+
+/* Update Item Title Styling */
+.update-item h3 {
+    color: green;
+    margin-bottom: 5px;
+    margin: 30px;
+}
+
+/* Update Item Paragraph Styling */
+.update-item p {
+    color: #555;
+    margin: 50px;
+}
+
+/* Styling for Strong (Bold) Text */
+.update-item p strong {
+    color: #333;
+}
+
+/* Title Styling - Add cursor pointer for clickability */
+.update-item h3 {
+    color: green;
+    margin-bottom: 5px;
+    margin: 30px;
+    cursor: pointer; /* Indicate the title is clickable */
+}
+
+/* Styling for the date and content (when visible) */
+.update-content {
+    margin-left: 30px; /* Align content with title */
+    margin-bottom: 20px;
+}
+
