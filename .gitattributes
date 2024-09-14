@@ -1,5 +1,0 @@
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-src/videos/Video.mp4 filter=lfs diff=lfs merge=lfs -text
-static/media/Video.bbebd4ca6a647b66eb08.mp4 filter=lfs diff=lfs merge=lfs -text
