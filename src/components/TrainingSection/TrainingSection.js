@@ -1,17 +1,9 @@
 import React, { useState } from 'react';
 import './TrainingSection.css'; // Import the CSS file
 import trainingImage from '../../images/Trainingplan.png'; // Training plan image
-import trainingVideo from '../../videos/Video.mp4'; // Training video 
 
 const TrainingSection = () => {
-    const [progress, setProgress] = useState(0);
-
-    // Function to update video progress
-    const handleProgress = (event) => {
-        const video = event.target;
-        const progressPercentage = (video.currentTime / video.duration) * 100;
-        setProgress(progressPercentage);
-    };
+    // You can remove the progress state and handleProgress since we're not using the native video player anymore.
 
     return (
         <div className="training-section-container">
@@ -35,18 +27,17 @@ const TrainingSection = () => {
             {/* Video Section */}
             <div className="video-section">
                 <h3>Watch the Training Video</h3>
-                <video
-                    className="training-video"
-                    controls
-                    onTimeUpdate={handleProgress}
-                >
-                    <source src={trainingVideo} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-
-                {/* Video Progress Bar */}
-                <div className="progress-bar-container">
-                    <div className="progress-bar" style={{ width: `${progress}%` }}></div>
+                <div className="training-video-container">
+                    {/* Embedding a YouTube video using iframe */}
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/KdoGhBwgbMQ?si=RUZ8mu9A8dWo94PM" 
+                        title="Training Video"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
                 </div>
             </div>
         </div>
