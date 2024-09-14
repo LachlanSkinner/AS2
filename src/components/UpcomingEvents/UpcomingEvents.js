@@ -26,7 +26,7 @@ const UpcomingEvents = () => {
     const [showOtherEvents, setShowOtherEvents] = useState(false);
 
     return (
-        <div className="container upcoming-events-container">
+        <div id="Events" className="container upcoming-events-container">
             <h2>Upcoming Events</h2>
 
             {/* Local Canberra Races Dropdown */}

@@ -6,7 +6,7 @@ const TrainingSection = () => {
     // You can remove the progress state and handleProgress since we're not using the native video player anymore.
 
     return (
-        <div className="training-section-container">
+        <div id="Training" className="training-section-container">
             {/* Training Plan Section */}
             <div className="training-section">
                 <h2>Training Plan</h2>

@@ -8,7 +8,11 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: 40px; /* space above container */
     margin-bottom: 40px; /* space below container */
+}
 
+h2 {
+    text-align: center;
+    margin-top: 20px; /* Adds spacing above the heading */
 }
 
 /* Forum Topics */
@@ -80,7 +84,6 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
 }
 
 .reply-form .btn:hover {
@@ -102,11 +105,13 @@
     background-color: #e1e1e1;
 }
 
+/* Contact Us Form Styling Inside Forum */
 .contact-us-form-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
+    align-items: center; /* Align items to the top to prevent shrinking */
 }
 
 .contact-logo {
@@ -114,15 +119,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 0; 
-    min-height: 0;
-    overflow: visible !important; /* Ensure no overflow is constraining the image */
+    width: auto; /* Allow the logo to grow */
+    height: auto; /* No height restrictions */
 }
+
+.contact-logo img {
+    max-width: 100%;  /* Ensure it scales to fit the container */
+    width: 100px; /* Adjust this value for a larger logo */
+    height: auto;  /* Maintain the aspect ratio */
+}
+
 
 .contact-form {
     flex: 2;
     padding-left: 20px;
-    padding-right: 20px
+    padding-right: 20px;
 }
 
 .contact-form label {

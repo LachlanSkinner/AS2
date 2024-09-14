@@ -15,6 +15,16 @@ const initialForumData = [
                 author: 'Tom Brooks',
                 message: 'Hi John, will we have a rest day this week leading into next week\'s criterium race?',
                 date: 'August 15, 2024'
+            },
+            {
+                author: 'Sarah Lee',
+                message: 'Thanks for the update, Coach. I’m feeling great so far and ready for the next challenge!',
+                date: 'August 16, 2024'
+            },
+            {
+                author: 'Ben Harper',
+                message: 'Looking forward to the criterium race! Let’s smash this training block.',
+                date: 'August 16, 2024'
             }
         ]
     },
@@ -25,6 +35,16 @@ const initialForumData = [
                 author: 'Pure Sports Nutrition',
                 message: 'Pure Sports will have a marquee set up at next week\'s race. All VeloNation supporters will receive free gels!',
                 date: 'August 17, 2024'
+            },
+            {
+                author: 'Lucy Adams',
+                message: 'Awesome! I love the Pure Sports gels. I’ll definitely grab a few at the race.',
+                date: 'August 18, 2024'
+            },
+            {
+                author: 'James Stewart',
+                message: 'Thanks, Pure Sports! Do you have any new flavors for us to try?',
+                date: 'August 19, 2024'
             }
         ]
     },
@@ -32,10 +52,20 @@ const initialForumData = [
         title: 'Sponsors',
         threads: [
             {
-                author: 'Sponsor XYZ',
-                message: 'We will be supporting this weekend’s event with branded merchandise and prizes.',
-                date: 'August 18, 2024'
-            }
+                author: 'Rouland',
+                message: 'We’ll also have some special edition race jerseys available at the event!',
+                date: 'August 19, 2024'
+            },
+            {
+                author: 'John Williams',
+                message: 'Great! I’ll be looking out for those jerseys. Will they be available online as well?',
+                date: 'August 19, 2024'
+            },
+            {
+                author: 'Pure Sports Nutrition',
+                message: 'Pure Sports will have a marquee set up at next week\'s race. All VeloNation supporters will receive free gels!',
+                date: 'August 17, 2024'
+            },
         ]
     },
     {
@@ -45,10 +75,21 @@ const initialForumData = [
                 author: 'Coach John Forrest',
                 message: 'Training will include hill sprints and strength intervals. Focus on endurance and tempo work.',
                 date: 'August 19, 2024'
+            },
+            {
+                author: 'Josh Bilski',
+                message: 'Hill sprints are tough but I know they’ll pay off. Thanks for the guidance, Coach!',
+                date: 'August 20, 2024'
+            },
+            {
+                author: 'Luke Evans',
+                message: 'Any tips for improving tempo work? I struggle maintaining a steady pace on long intervals.',
+                date: 'August 20, 2024'
             }
         ]
     }
 ];
+
 
 const Forum = () => {
     const [openTopic, setOpenTopic] = useState(null);
@@ -132,7 +173,7 @@ const Forum = () => {
     };
 
     return (
-        <div className="forum-container">
+        <div id="Forum" className="forum-container">
             <h2>Community Forum</h2>
 
             {/* Forum Topic List */}
@@ -170,67 +211,58 @@ const Forum = () => {
                 ))}
             </div>
 
-            {/* Contact Us Dropdown */}
-            <h3 onClick={toggleContactForm} className="contact-us-title">
-                Contact Us {isContactFormVisible ? '▲' : '▼'}
-            </h3>
-            {isContactFormVisible && (
-                <div className="contact-us-form-container">
-                    <div className="contact-logo">
+        {/* Contact Us Dropdown */}
+        <h3 onClick={toggleContactForm} id="Contact" className="contact-us-title">
+            Contact Us {isContactFormVisible ? '▲' : '▼'}
+        </h3>
+        {isContactFormVisible && (
+            <div className="contact-us-form-container">
+                <div className="contact-logo">
                     <img 
                         src={logoImage} 
                         alt="Company Logo" 
                         className="logo" 
-                        style={{
-                            width: '900px !important',  // Force width
-                            height: '900px !important', // Force height
-                            display: 'block',
-                            objectFit: 'contain'  //scales without cropping
-                        }} 
                     />
-
-
-
-                    </div>
-
-                    <form onSubmit={handleContactFormSubmit} className="contact-form">
-                        <label htmlFor="name">Name:</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            value={contactFormData.name}
-                            onChange={handleContactInputChange}
-                        />
-                        {contactFormErrors.name && <p className="error-text">{contactFormErrors.name}</p>}
-
-                        <label htmlFor="email">Email:</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            value={contactFormData.email}
-                            onChange={handleContactInputChange}
-                        />
-                        {contactFormErrors.email && <p className="error-text">{contactFormErrors.email}</p>}
-
-                        <label htmlFor="message">Message:</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="5"
-                            value={contactFormData.message}
-                            onChange={handleContactInputChange}
-                        ></textarea>
-                        {contactFormErrors.message && <p className="error-text">{contactFormErrors.message}</p>}
-
-                        <button type="submit" className="btn">Submit</button>
-
-                        {/* Submitted message appears directly below the submit button */}
-                        {submittedMessage && <p className="submitted-message">{submittedMessage}</p>}
-                    </form>
                 </div>
-            )}
+
+                <form onSubmit={handleContactFormSubmit} className="contact-form">
+                    <label htmlFor="name">Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        value={contactFormData.name}
+                        onChange={handleContactInputChange}
+                    />
+                    {contactFormErrors.name && <p className="error-text">{contactFormErrors.name}</p>}
+
+                    <label htmlFor="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value={contactFormData.email}
+                        onChange={handleContactInputChange}
+                    />
+                    {contactFormErrors.email && <p className="error-text">{contactFormErrors.email}</p>}
+
+                    <label htmlFor="message">Message:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        value={contactFormData.message}
+                        onChange={handleContactInputChange}
+                    ></textarea>
+                    {contactFormErrors.message && <p className="error-text">{contactFormErrors.message}</p>}
+
+                    <button type="submit" className="btn">Submit</button>
+
+                    {/* Submitted message appears directly below the submit button */}
+                    {submittedMessage && <p className="submitted-message">{submittedMessage}</p>}
+                </form>
+            </div>
+        )}
         </div>
     );
 };
