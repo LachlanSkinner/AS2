@@ -64,11 +64,12 @@
     margin-bottom: 20px;
 }
 
-.training-video {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* Centering the YouTube video */
+.training-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 /* Progress Bar */
