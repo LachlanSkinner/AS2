@@ -1,3 +1,5 @@
+//Athletye profiles 
+
 import React from 'react';
 import './AthleteProfiles.css'; // Import the CSS for styling
 import AthleteProfile from './AthleteProfile';

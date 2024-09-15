@@ -1,3 +1,5 @@
+//Forum
+
 import React, { useState } from 'react';
 import './Forum.css';
 import logoImage from '../../images/logowithtext.png'; // Import the logo 
@@ -109,12 +111,12 @@ const Forum = () => {
         setOpenTopic(openTopic === index ? null : index);
     };
 
-    // Handle post reply
+    //Handle post reply
     const handlePostReply = (topicIndex, e) => {
         e.preventDefault();
         if (replyText.trim()) {
             const newPost = {
-                author: 'User', // You can set this dynamically
+                author: 'User', 
                 message: replyText,
                 date: new Date().toLocaleDateString()
             };
@@ -125,7 +127,7 @@ const Forum = () => {
         }
     };
 
-    // Toggle Contact Us form
+    // Toggle contact Us form
     const toggleContactForm = () => {
         setIsContactFormVisible(!isContactFormVisible);
         setSubmittedMessage(''); // Clear the submitted message when the form is reopened
@@ -154,7 +156,7 @@ const Forum = () => {
         return errors;
     };
 
-    // Handle contact form submit
+    //Handle contact form submit
     const handleContactFormSubmit = (e) => {
         e.preventDefault();
         const errors = validateContactForm();
@@ -176,7 +178,7 @@ const Forum = () => {
         <div id="Forum" className="forum-container">
             <h2>Community Forum</h2>
 
-            {/* Forum Topic List */}
+            {/* Forum Topic list */}
             <div className="forum-topics">
                 <h3>Topics</h3>
                 {forumData.map((topic, index) => (
@@ -258,7 +260,7 @@ const Forum = () => {
 
                     <button type="submit" className="btn">Submit</button>
 
-                    {/* Submitted message appears directly below the submit button */}
+                    {/* Submitted message appears directly below the submit button*/}
                     {submittedMessage && <p className="submitted-message">{submittedMessage}</p>}
                 </form>
             </div>

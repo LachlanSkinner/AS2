@@ -1,5 +1,7 @@
+//Upcoming events test
+
 import { render, screen, fireEvent } from '@testing-library/react';
-import UpcomingEvents from '../components/UpcomingEvents/UpcomingEvents'; // Adjust the path if necessary
+import UpcomingEvents from '../components/UpcomingEvents/UpcomingEvents'; 
 
 test('renders Upcoming Events title', () => {
     render(<UpcomingEvents />);
@@ -12,7 +14,7 @@ test('renders Upcoming Events title', () => {
 test('toggles Local Canberra Races dropdown', () => {
     render(<UpcomingEvents />);
 
-    // Check that the Local Canberra Races heading is rendered
+    // Check that the Local Canberra Races heading isrendered
     const localRacesHeading = screen.getByText(/Local Canberra Races/i);
     expect(localRacesHeading).toBeInTheDocument();
 
@@ -23,7 +25,7 @@ test('toggles Local Canberra Races dropdown', () => {
     // Click to open the dropdown
     fireEvent.click(localRacesHeading);
 
-    // Now, the local events should be visible
+    //Now, the local events should be visible
     const localEventVisible = screen.getByText(/Canberra Criterium Series/i);
     expect(localEventVisible).toBeInTheDocument();
 
@@ -41,21 +43,21 @@ test('toggles Other Australian Races dropdown', () => {
     const otherRacesHeading = screen.getByText(/Other Australian Races/i);
     expect(otherRacesHeading).toBeInTheDocument();
 
-    // Initially, the other events should not be visible
+    //initially, the other events should not be visible
     const otherEvent = screen.queryByText(/Goulburn to Sydney Classic/i);
     expect(otherEvent).not.toBeInTheDocument();
 
     // Click to open the dropdown
     fireEvent.click(otherRacesHeading);
 
-    // Now, the other events should be visible
+    //Now, the other events should be visible
     const otherEventVisible = screen.getByText(/Goulburn to Sydney Classic/i);
     expect(otherEventVisible).toBeInTheDocument();
 
-    // Click again to close the dropdown
+    // click again to close the dropdown
     fireEvent.click(otherRacesHeading);
 
-    // The other events should not be visible anymore
+    //the other events should not be visible anymore
     expect(otherEventVisible).not.toBeInTheDocument();
 });
 

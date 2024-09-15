@@ -29,7 +29,7 @@ const UpcomingEvents = () => {
         <div id="Events" className="container upcoming-events-container">
             <h2>Upcoming Events</h2>
 
-            {/* Local Canberra Races Dropdown */}
+            {/* local Canberra Races Dropdown */}
             <div className="events-category">
                 <h3 onClick={() => setShowLocalEvents(!showLocalEvents)}>
                     Local Canberra Races {showLocalEvents ? '▲' : '▼'}
@@ -56,7 +56,7 @@ const UpcomingEvents = () => {
                 )}
             </div>
 
-            {/* Other Australian Races Dropdown */}
+            {/* Other Australian Races dropdown */}
             <div className="events-category">
                 <h3 onClick={() => setShowOtherEvents(!showOtherEvents)}>
                     Other Australian Races {showOtherEvents ? '▲' : '▼'}

@@ -1,3 +1,5 @@
+//Live Updates
+
 import React from 'react';
 import './LiveUpdates.css'; //Import CSS file
 

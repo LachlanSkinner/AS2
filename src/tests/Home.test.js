@@ -1,5 +1,7 @@
+//Home test
+
 import { render, screen } from '@testing-library/react';
-import Home from '../components/Home/Home'; // Adjust the path according to your file structure
+import Home from '../components/Home/Home'; 
 
 test('renders hero section', () => {
     render(<Home />);

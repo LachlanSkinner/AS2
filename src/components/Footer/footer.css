@@ -1,4 +1,4 @@
-/* Footer Container */
+/* Footer container */
 .footer-container {
     background-color: #231f1f; 
     color: white;
@@ -10,7 +10,7 @@
     width: 100%;
 }
 
-/* Footer Content */
+/* Footer content */
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -20,7 +20,7 @@
     justify-content: center;
 }
 
-/* Footer Links */
+/* Footer links */
 .footer-links {
     margin-top: 10px;
 }
@@ -36,7 +36,7 @@
     text-decoration: underline;
 }
 
-/* Social Icons */
+/*Social icons*/
 .social-icons {
     margin-top: 15px;
 }
@@ -49,10 +49,10 @@
 }
 
 .social-icons a:hover {
-    color: #0dcc06; /* Change icon color on hover */
+    color: #0dcc06; /*Change icon color on hover */
 }
 
-/* Responsive Design */
+/* Responsive design */
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;

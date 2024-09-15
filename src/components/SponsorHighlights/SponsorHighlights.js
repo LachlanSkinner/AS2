@@ -1,5 +1,7 @@
+//Sponsot Highlights
+
 import React, { useState } from 'react';
-import './SponsorHighlights.css'; // Optional CSS file for styling
+import './SponsorHighlights.css'; // CSS file for styling
 import sponsor1Image from '../../images/sponsor1.jpg';
 import sponsor2Image from '../../images/sponsor2.jpg';
 import sponsor3Image from '../../images/sponsor3.png';

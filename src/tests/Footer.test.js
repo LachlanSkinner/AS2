@@ -1,5 +1,7 @@
+//Footer test
+
 import { render, screen } from '@testing-library/react';
-import Footer from '../components/Footer/Footer'; // Correct path
+import Footer from '../components/Footer/Footer'; 
 
 test('renders footer links', () => {
     render(<Footer />);

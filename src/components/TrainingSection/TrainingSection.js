@@ -1,9 +1,11 @@
+//Training section
+
 import React, { useState } from 'react';
 import './TrainingSection.css'; // Import the CSS file
 import trainingImage from '../../images/Trainingplan.png'; // Training plan image
 
 const TrainingSection = () => {
-    // You can remove the progress state and handleProgress since we're not using the native video player anymore.
+
 
     return (
         <div id="Training" className="training-section-container">
@@ -28,7 +30,7 @@ const TrainingSection = () => {
             <div className="video-section">
                 <h3>Watch the Training Video</h3>
                 <div className="training-video-container">
-                    {/* Embedding a YouTube video using iframe */}
+                    {/*embedding a YouTube video using iframe */}
                     <iframe
                         width="560"
                         height="315"

@@ -1,11 +1,11 @@
-/* General header styling */
+/*general header styling */
 .header {
     background: #231f1f;
     color: white;
     padding: 1rem;
 }
 
-/* Flexbox layout for logo, navigation, and search */
+/*flexbox layout for logo, navigation, and search */
 .header-container {
     display: flex;
     align-items: center;
@@ -14,7 +14,7 @@
     margin: auto;
 }
 
-/* Logo styling */
+/*Logo styling */
 .logo-container {
     flex: 1;
 }
@@ -24,7 +24,7 @@
     width: auto;
 }
 
-/* Navigation styling */
+/* navigation styling */
 .nav-links {
     flex: 2;
     display: flex;
@@ -49,18 +49,18 @@ nav a {
 }
 
 nav a:hover {
-    color: #4CAF50; /* Gold color on hover */
+    color: #4CAF50; /* Green color on hover*/
 }
 
-/* Search bar dropdown container */
+/* Search bar dropdown container*/
 .search-dropdown-container {
     position: relative;
     flex: 1;
     display: flex;
-    justify-content: flex-end; /* Aligns search button to the right */
+    justify-content: flex-end; /*aligns search button to the right */
 }
 
-/* Search button styling */
+/* Search button styling*/
 .search-button {
     background-color: transparent;
     color: white;
@@ -73,14 +73,14 @@ nav a:hover {
 }
 
 .search-button:hover {
-    background-color: #4CAF50; /* Gold color on hover */
+    background-color: #4CAF50; /*green colour on hover */
     color: #231f1f;
 }
 
-/* Dropdown search bar styles */
+/*Dropdown search bar styles */
 .search-bar-dropdown {
     position: absolute;
-    top: 40px; /* Space from the search button */
+    top: 40px; /*space from the search button */
     right: 0;
     background-color: white;
     border: 1px solid #ccc;
@@ -94,7 +94,7 @@ nav a:hover {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Search input styling inside the dropdown */
+/* Search input styling inside the dropdown*/
 .search-input {
     width: 90%;
     padding: 1rem;
@@ -111,7 +111,7 @@ nav a:hover {
     outline: none;
 }
 
-/* Search results styling */
+/* Search results styling*/
 .search-results {
     margin: 0;
     padding: 0;
@@ -138,7 +138,7 @@ nav a:hover {
     background-color: #f5f5f5;
 }
 
-/* Scroll bar styling */
+/*scroll bar styling */
 .search-results::-webkit-scrollbar {
     width: 6px;
 }
@@ -148,7 +148,7 @@ nav a:hover {
     border-radius: 3px;
 }
 
-/* Error message */
+/* Error message  */
 .error-message {
     color: red;
     margin-top: 0.5rem;
@@ -156,14 +156,14 @@ nav a:hover {
     font-size: 0.875rem;
 }
 
-/* Search bar dropdown transition */
+/* Search bar dropdown transition*/
 .search-bar-dropdown.closed {
     opacity: 0;
     transform: translateY(-10px);
     pointer-events: none;
 }
 
-/* Smooth closing animation for the dropdown */
+/* Smooth closing animation for the dropdown*/
 .search-bar-dropdown.open {
     opacity: 1;
     transform: translateY(0);

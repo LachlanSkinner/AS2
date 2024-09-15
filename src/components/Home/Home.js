@@ -1,3 +1,5 @@
+//Home
+
 import React from 'react';
 import './Home.css'; // Imports the CSS file for Home
 import heroImage from '../../images/hero.png'; 

@@ -3,21 +3,21 @@
     max-width: 70%;
     position: relative;
     margin: auto;
-    padding-bottom: 20px; /* Added padding to create space below */
+    padding-bottom: 20px; 
 }
 
-/* Center the Race Gallery heading */
+/* Center the race gallery heading */
 .slideshow-container h2 {
     text-align: center;
-    margin-bottom: 20px; /* Adds space between the heading and the slideshow */
+    margin-bottom: 20px; /* Adds space between the headingand the slideshow */
 }
 
-/* Slide settings */
+/* Slide settings*/
 .mySlides {
     display: none;
 }
 
-/* Previous and Next Buttons */
+/* Previous and Next Buttons*/
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -57,9 +57,9 @@
     background-color: #717171;
 }
 
-/* Padding around the dots */
+/* Padding around the dots*/
 .dots-container {
-    padding: 20px 0; /* Adds padding above and below the dots */
+    padding: 20px 0; 
     text-align: center;
 }
 

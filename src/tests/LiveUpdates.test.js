@@ -1,3 +1,5 @@
+//Live updates test
+
 import { render, screen } from '@testing-library/react';
 import LiveUpdates from '../components/LiveUpdates/LiveUpdates';
 

@@ -1,6 +1,8 @@
+//Header
+
 import React, { useState } from 'react';
 import './Header.css';
-import logoImage from '../../images/logo.png'; // Import your logo image
+import logoImage from '../../images/logo.png'; // Import logo image
 
 const Header = () => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -8,7 +10,6 @@ const Header = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false); // To control dropdown visibility
     const [errorMessage, setErrorMessage] = useState(''); // To store validation errors
 
-    // Sample items for filtering (with ids matching the section components)
     const items = [
         { name: 'Home', anchor: '#Home' },
         { name: 'Athletes', anchor: '#Athletes' },
@@ -24,7 +25,7 @@ const Header = () => {
     const handleSearchChange = (e) => {
         const query = e.target.value;
         setSearchQuery(query);
-        setErrorMessage(''); // Clear error when user types
+        setErrorMessage(''); // Clearerror when user types
 
         if (query.length > 0) {
             const filtered = items.filter(item =>
@@ -36,7 +37,7 @@ const Header = () => {
         }
     };
 
-    // Handle search submission with validation
+    //handle search submission with validation
     const handleSearchSubmit = (e) => {
         e.preventDefault(); // Prevent page reload on form submission
         if (searchQuery.trim() === '') {
@@ -49,7 +50,7 @@ const Header = () => {
         console.log('Searching for:', searchQuery);
     };
 
-    // Toggle the dropdown search bar visibility
+    // Toggle  the dropdown search bar visibility
     const toggleSearchBar = () => {
         setIsSearchOpen(!isSearchOpen);
     };
@@ -57,12 +58,12 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header-container">
-                {/* Logo on the left */}
+                {/* Logo on the left*/}
                 <div className="logo-container">
                     <img src={logoImage} alt="VeloNation Logo" className="logo" />
                 </div>
 
-                {/* Center aligned navigation */}
+                {/* Center aligned navigation*/}
                 <nav className="nav-links">
                     <ul>
                         <li><a href="#Home">Home</a></li>
@@ -76,16 +77,16 @@ const Header = () => {
                     </ul>
                 </nav>
 
-                {/* Search button and dropdown search bar */}
+                {/* Search button and dropdown search bar*/}
                 <div className="search-dropdown-container">
                     <button onClick={toggleSearchBar} className="search-button">
                         Search
                     </button>
 
-                    {/* Search bar dropdown */}
+                    {/* Search bar dropdown*/}
                     {isSearchOpen && (
                         <div className="search-bar-dropdown">
-                            <form onSubmit={handleSearchSubmit}> {/* This function checks if the searchQuery is empty before proceeding. If it's empty, it sets an error message (setErrorMessage). */}
+                            <form onSubmit={handleSearchSubmit}> {/* thos function checks if the searchQuery is empty before proceeding. If it's empty, it sets an error message (setErrorMessage). */}
                                 <input
                                     type="text"
                                     placeholder="Search..."

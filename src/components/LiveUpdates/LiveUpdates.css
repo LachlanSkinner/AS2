@@ -1,12 +1,12 @@
-/* Live Updates Section Styling - similar to Latest Updates */
+/* Live Updates Section Styling*/
 .widget {
     padding: 10px;
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin: 0 auto 2rem; /* Center the section and add bottom margin */
-    max-width: 1450px; /* Limit the width of the section */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* slight shadow */
+    margin: 0 auto 2rem; /* Centres the section and adds bottom margin */
+    max-width: 1450px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* slight shadow  */
     text-align: center;
 }
 

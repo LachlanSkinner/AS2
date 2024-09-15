@@ -1,3 +1,5 @@
+//Athlete Profile reusable component
+
 import React from 'react';
 
 const AthleteProfile = ({ image, name, specialization, achievements }) => {

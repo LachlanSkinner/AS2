@@ -1,3 +1,5 @@
+//Race gallery
+
 import React, { useState } from 'react';
 import './RaceGallery.css'; // Import the CSS file
 import event1Image from '../../images/event1.png';
@@ -21,17 +23,17 @@ const RaceGallery = () => {
 
     const totalSlides = images.length;
 
-    // Function to go to the next slide
+    //Function to go to the next slide
     const nextSlide = () => {
         setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
     };
 
-    // Function to go to the previous slide
+    //Function to go to the previous slide
     const prevSlide = () => {
         setCurrentSlide((prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides);
     };
 
-    // Function to go to a specific slide
+    //Function to go to a specific slide
     const goToSlide = (index) => {
         setCurrentSlide(index);
     };
@@ -51,7 +53,7 @@ const RaceGallery = () => {
                 ))}
             </div>
 
-            {/* Previous and next buttons */}
+            {/*Previous and next buttons */}
             <a className="prev" onClick={prevSlide}>
                 &#10094;
             </a>
@@ -59,7 +61,7 @@ const RaceGallery = () => {
                 &#10095;
             </a>
 
-            {/* Dots for navigating to specific slides */}
+            {/*Dots for navigating to specific slides */}
             <div className="dots-container">
                 {images.map((_, index) => (
                     <span
